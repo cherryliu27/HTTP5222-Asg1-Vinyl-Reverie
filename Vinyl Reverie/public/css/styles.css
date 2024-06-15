@@ -1,0 +1,374 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* =============== COMMON LAYOUT STYLING =============== */
+/* ----- NAVIGATION STYLING ----- */
+h2{
+    font-family: "Plaster", system-ui;
+    font-size: 2rem;
+    padding: 0;
+    margin:0;
+}
+
+.logo{
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+
+}
+
+.navlinks a, .logo a, .navlinks a:visited, .logo a:visited{
+    text-decoration:none;
+    color: black;
+}
+
+.navbar{
+    display: flex;
+}
+
+
+.navlinks li{
+    list-style-type:none;
+    padding: 0 2rem;
+}
+
+.navlinks{
+    display: flex;
+    align-items: center;
+    padding-right: 3rem;
+    font-size: 1.2rem;
+}
+
+.header-container{
+    display: flex;
+    width: 95%;
+    margin: auto;
+    justify-content: space-between;
+
+}
+
+#header{
+    display: flex;
+    border: 1px solid black;
+    height: 4.5rem;
+    background-color: #f1efed;
+}
+
+/* ----- FOOTER STYLING ----- */
+#footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:black;
+    color:white;
+    height: 2rem;
+}
+
+
+/* =============== INDEX STYLING =============== */
+
+/* ----- HERO SECTION STYLING ----- */
+.section-hero{
+    display: flex;
+}
+
+.section-left{
+    border: solid 1px black;
+    flex-basis: 60%;
+    height: 30rem;
+}
+
+.section-right{
+    border: solid 1px black;
+    flex-basis: 40%;
+    height: 32rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(29, 29, 29);
+
+}
+
+.section-right-content{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    align-items: center;
+}
+
+.section-right-content p, .about-info-container {
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: normal;
+    color: white;
+    line-height: 1.5rem;
+}
+
+.section-right-content button{
+    width: 50%;
+    background-color:rgb(29, 29, 29);
+    border: white 1.5px solid;
+    color:white;
+    font-family: "Prosto One", sans-serif;
+    font-size: 1.3rem;
+    padding: 0.5rem 0.3rem;
+    margin-top: 1rem;
+	cursor: pointer;
+	outline: inherit;
+
+}
+
+.section-right-content button:hover{
+    background-color:white;
+    color: black;
+    border: transparent 1.5px solid;
+}
+
+.hero-img{
+    object-fit: cover;
+    border: solid 1px black;
+    flex-basis: 60%;
+    height: 32rem;
+}
+
+
+/* ----- NEW RELEASE STYLING ----- */
+
+.section-new-release{
+    padding-bottom: 3rem;
+}
+
+.shopTitle{
+    text-align: center;
+}
+
+.section-title{
+    font-family: "Prosto One", sans-serif;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 1rem;
+    padding-top: 2.2rem;
+    padding-bottom: 1.1rem;
+    font-size: 1.8rem;
+}
+
+.vinyl-card, .vinyl-card:visited{
+    border: 1.5px solid transparent;
+    background-color:white;
+    width:260px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 1.2rem;
+    text-decoration: none;
+    color:black;
+}
+
+.vinyl-card-img-container{
+    margin: auto;
+}
+
+.vinyl-card-img{
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    max-width: 220px;
+}
+
+.vinyl-info p{
+    padding: 0;
+    margin:0;
+    text-align: center;
+}
+
+.vinyl-info {
+    margin: 0 1.3rem;
+    margin-top: -1.7rem;
+}
+
+.vinyl-info .record-name{
+    font-weight: 600;
+}
+.vinyl-info .artist-name{
+    margin-top: 0.5rem;
+}
+
+.vinyl-info .price{
+    margin-top: 0.8rem;
+    margin-bottom: 0.7rem;
+    font-size: 1.1rem;
+}
+
+.new-release-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.vinyl-card:hover{
+    border: 1.5px solid black;
+    box-sizing: border-box;
+}
+
+
+/* =============== ABOUT PAGE STYLING =============== */
+
+/* ----- ABOUT US STYLING ----- */
+.section-about{
+    height: 30rem;
+    border: solid 1px black;
+    background-color:rgb(29, 29, 29);
+    color:white;
+    
+}
+
+
+.about-img-container {
+    border: 1px solid black;
+    background-image: url('/img/about3.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 30rem;
+    flex:1;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+
+.section-about-container{
+    flex:1;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+
+.about-info-container h1, .section-right-content h1{
+    font-family: "Prosto One", sans-serif;
+    color: white;
+}
+
+.about-info-container{
+    padding: 1rem 6rem;
+    flex-basis: 40%;
+    text-align: center;
+}
+
+.about-info-container p{
+    line-height: 2rem;
+}
+
+/* ----- LOCATION STYLING ----- */
+.section-location{
+    background-color: #f1efed;
+    color:black;
+    padding-bottom:1rem;
+}
+
+.location-card p{
+    padding: 0;
+    margin:0;
+}
+
+.location-card-container{
+    width: 80%;
+    margin: auto;
+    margin-top: -1.5rem;
+    display:flex;
+    justify-content: center;
+}
+
+.location-card{
+    margin: 3rem;
+    width: 35%
+}
+
+.location-image1 {
+    background-image: url('/img/store1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 12rem;
+    border: 1px solid black;
+
+}
+
+.location-image2 {
+    background-image: url('/img/store2.jpg');
+    border: 1px solid black;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 12rem;
+}
+
+.location-info{
+    margin-top: 0.7rem;
+    text-align: center;
+}
+
+.address{
+    font-weight: 600;
+}
+
+.location-info p{
+    line-height: 1.3rem;
+}
+
+
+
+/* =============== SHOP PAGE STYLING =============== */
+.main-content{
+    background-color:#f1efed;
+}
+
+.shop-container{
+    width:90%;
+    margin: auto;
+    padding-bottom: 3rem;
+}
+
+.shop-container h1{
+    padding: 0;
+    margin: 0;
+    padding: 2rem 0 1rem;
+    font-family: "Prosto One", sans-serif;
+    font-size: 1.5rem;
+}
+
+.shop-container .shop-text{
+    text-align: center;
+    width: 65%;
+    margin: auto;
+    margin-bottom: 1.5rem;
+    line-height: 1.5rem;
+
+}
+
+.items-container{
+    width: 97%;
+    margin:0;
+    padding:0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin:auto;
+    row-gap: 0.5em;
+}
+
+.vinyl-card-gap{
+    display: flex;
+    margin: 0.5rem;
+}

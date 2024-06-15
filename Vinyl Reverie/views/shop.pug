@@ -1,0 +1,18 @@
+extends layout 
+
+block layout-content
+    .main-content 
+        .shop-container 
+            h1.section-title SHOP ALL
+            p.shop-text Discover the soulful beats and eclectic sounds of Vinyl Reverie. Dive into our carefully curated selection, featuring a blend of timeless classics, indie gems, and the latest from Korean R&B and hip hop artists.
+            .items-container
+                each record in vinyls 
+                    a(href="/shop" class="vinyl-card vinyl-card-gap") 
+                        .vinyl-card-img-container 
+                            img(src="/img/"+record.image, alt=record.name, class="vinyl-card-img")
+                        .vinyl-info
+                            p.record-name #{record.name}
+                            p.artist-name #{record.artist}
+                            p.price $#{record.price} USD
+
+                
